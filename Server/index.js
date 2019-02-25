@@ -104,6 +104,7 @@ app.post('/api/annunci', (req, res) => {
   var newFoto = 'linkFoto';
   var newPrezzo = Math.random() * 200;
   var newIsDisponibile = "true";
+  var pippo = 9876;
 
   let db = new sqlite3.Database('../db/affitti.db', sqlite3.OPEN_READWRITE, (err) => {
     if (err) {
